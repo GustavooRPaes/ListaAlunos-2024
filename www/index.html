@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="scrpit/script.js"></script>
+    <title>Alunos</title>
+</head>
+<body>
+    <label for="aluno1">Aluno:</label>
+    <input type="text" id="aluno1">
+    <label for="selecao">Menção</label>
+    <select class="select" id="selecao">
+        <option selected hidden></option>
+        <option value="I" id="Mencao1">I</option>
+        <option value="R" id="Mencao2">R</option>
+        <option value="B" id="Mencao3">B</option>
+        <option value="MB" id="Mencao4">MB</option>
+    </select>
+
+
+    <input type="button" name="btnReceptor" id="btnReceptor" value="INSERIR" onclick="receba()">
+    <input type="button" name="btnListar" id="btnListar" value="LISTAR" onclick="Listar()">
+    <input type="button" name="btnexcluir" id="btnexcluir" value="EXCLUIR" onclick="Excluir()">
+    <input type="button" name="btnShift" id="btnShift" value="SHIFT" onclick="ExcluirPrimeiro()">
+    <input type="button" name="btnUnshift" id="btnUnshift" value="UNSHIFT" onclick="AdicionarPrimeiro()">
+
+    <div id="referencas"></div>
+    <div id="referencas2"></div>
+</body>
+</html>
